@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+        <!-- ***Google Fonts Awesome*** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet" />
+        <!-- ***Font Awesome*** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <!-- ***Bootstrap 5.3.2 CSS*** -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- ***Main CSS*** -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Retro Forum</title>
+    </head>
+    <body>
+        <header class="mt-5">
+            <nav class="navbar navbar-expand-lg navbar bg container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/navBar/logo.png" alt="ReTro" class="logo" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="true"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Home"
+                                ><img class="nav-image" src="./assets/images/navBar/house.png" alt="Home" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Edit"
+                                ><img class="nav-image" src="./assets/images/navBar/edit.png" alt="Edit" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Add New"
+                                ><img class="nav-image" src="./assets/images/navBar/add.png" alt="Add New" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Bookmark"
+                                ><img class="nav-image" src="./assets/images/navBar/flag.png" alt="Bookmark" />
+                            </a>
+                        </li>
+                        <li class="nav-item nav-Button-container">
+                            <button class="btn btn-primary nav-Button">Sign In</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="container mt-4 banner-bg">
+                <div class="row banner p-5">
+                    <div class="col-md-7">
+                        <div class="banner-left">
+                            <div class="banner-top mt-2">
+                                <h3>
+                                    Welcome to the <br />
+                                    <span class="banner-top-h3-span">ReTro</span> Forum
+                                </h3>
+                            </div>
+                            <div class="banner-middle mt-3">
+                                <p>Share your favorite opinion and win and wp forum coffee mug!</p>
+                            </div>
+                            <div class="col-md-5 d-none justify-content-center align-items-center" id="smallRegStats">
+                                <div class="banner-right">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Registered Users</p>
+                                        <p>01</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Forum</p>
+                                        <p>05</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Topics</p>
+                                        <p>01</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Replies</p>
+                                        <p>01</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-bottom mt-4">
+                                <form onsubmit="searchPosts(event)">
+                                    <div class="search-form">
+                                        <input
+                                            type="text"
+                                            id="categoryInput"
+                                            class="searchField"
+                                            placeholder="Search here anything"
+                                        />
+                                        <button type="submit" class="searchButton">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-none d-lg-flex justify-content-center align-items-center">
+                        <div class="banner-right">
+                            <div class="d-flex justify-content-between">
+                                <p>Registered Users</p>
+                                <p>01</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Forum</p>
+                                <p>05</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Topics</p>
+                                <p>01</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Replies</p>
+                                <p>01</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container mt-5 main-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="main-content-heading">Let's Discuss</h3>
+                        <div class="row justify-content-center mb-5">
+                            <p class="main-content-paragraph">
+                                Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                                features allow for a streamlined .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 spinner-container">
+                    <div id="spinner" class="spinner" style="display: none"></div>
+                    <div class="col-md-8 col-sm-12 posts-container" id="postsContainer"></div>
+                    <div class="col-md-4 col-sm-12 selected-posts p-5">
+                        <div class="row mb-2">
+                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                <h3 class="selected-posts-title">Title</h3>
+                                <div class="d-flex justify-content-center selected-posts-desc">
+                                    <img class="d-inline" src="./assets/images/tick.png" alt="" />
+                                    Mark as read&nbsp;<span id="SelectedPostsCount"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row selected-posts-lists" id="selectedPosts">
+                            <div class="col-12 d-flex justify-content-between single-list-post py-2 mb-3">
+                                <div class="col-12 single-list-post-heading text-center">Select A Post</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container mt-4 register p-5">
+                <div class="row justify-content-between px-5">
+                    <div class="col-md-7 d-flex align-items-center">
+                        <div class="row">
+                            <h3 class="register-heading mb-3">Join Our Forum</h3>
+                            <p class="register-paragraph mb-3">
+                                Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view
+                                the results directly within the app.
+                            </p>
+                            <button class="register-button mt-2">Registered Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-end"><img src="./assets/images/joinforum.png" alt="" class="join-forum" /></div>
+                </div>
+            </section>
+            <section class="container mt-4 latest-posts-container p-5">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="main-content-heading">Latest Posts</h3>
+                        <div class="row justify-content-center mb-5">
+                            <p class="main-content-paragraph mt-3">
+                                Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                                features allow for a streamlined .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="latestPostContainer"></div>
+            </section>
+        </main>
+        <footer class="container-fluid mt-5 footer p-5">
+            <div class="container p-5">
+                <div class="row text-center">
+                    <h3 class="footer-heading">ReTro</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <p class="footer-paragraph">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-2">
+                    <div class="col-6 text-center">
+                        <i class="fa-brands fa-twitter footer-icons"></i>
+                        <i class="fa-brands fa-facebook-f footer-icons"></i>
+                        <i class="fa-brands fa-instagram footer-icons"></i>
+                        <i class="fa-brands fa-github footer-icons"></i>
+                    </div>
+                </div>
+                <hr class="single-post-divider mt-3" />
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <p class="footer-paragraph">2017, All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ***Bootstrap 5.3.2 JS*** -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- ***Jquery  3.7.1.*** -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- ***Main JS*** -->
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            $(document).ready(function () {
+                $(".navbar-toggler").click(function () {
+                    var $menu = $(".menu");
+                    if ($menu.css("display") === "none") {
+                        $menu.css("display", "block");
+                    } else {
+                        $menu.css("display", "none");
+                    }
+                });
+            });
+        </script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+/* ***Nav Section CSS*** */
+.logo {
+    width: 104px;
+    height: 44px;
+}
+.nav-link {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 14px;
+    border: 1px solid rgba(3, 7, 18, 0.1);
+    border-radius: 50px;
+    background: rgba(18, 19, 45, 0.03);
+    margin-right: 12px;
+}
+.nav-image {
+    width: 19.5px;
+    height: 18.28px;
+}
+.nav-Button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-Button {
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: rgb(121, 125, 252);
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+.nav-Button:hover {
+    background: rgb(31, 33, 112);
+}
+
+/* ***Banner Section CSS*** */
+.banner-bg {
+    border-radius: 32px;
+    background: rgb(18, 19, 45);
+    color: rgb(255, 255, 255);
+}
+
+.banner {
+    background: url(../images/bgbanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-top h3 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 86px;
+    letter-spacing: 0px;
+}
+.banner-top-h3-span {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(121, 125, 252, 1) 0%, rgb(51, 54, 128) 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-middle p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0px;
+}
+
+.searchField {
+    width: 400px;
+    height: 56px;
+    padding: 18px 20px 18px 20px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    border: none;
+}
+.searchButton {
+    width: 123px;
+    height: 44px;
+    padding: 5px 27px 5px 27px;
+    border-radius: 46px;
+    border: none;
+    background: rgb(121, 125, 252);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-left: -133px;
+}
+
+.banner-right {
+    width: 371px;
+    height: 288px;
+    padding: 48px;
+    border-radius: 32px;
+    background: rgb(255, 255, 255);
+    color: rgba(18, 19, 45, 0.8);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+/* ***Main Section CSS*** */
+.main-content-heading {
+    color: rgb(18, 19, 45);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.main-content-paragraph {
+    color: rgba(18, 19, 45, 0.6);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    width: 691px;
+}
+.single-post {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: rgb(243, 243, 245);
+}
+
+.single-post:hover {
+    border: 1px solid rgb(121, 125, 252);
+    background: rgba(121, 125, 252, 0.1);
+}
+
+.single-post-image {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.single-post-image-container {
+    width: 72px;
+    height: 72px;
+    position: relative;
+}
+.single-post-image-dot {
+    position: absolute;
+    width: 18.67px;
+    height: 18.67px;
+    right: -7px;
+    top: -10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+}
+.single-post-title {
+    color: rgb(18, 19, 45);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+.single-post-description {
+    color: rgba(18, 19, 45, 0.6);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+.single-post-divider {
+    width: 100%;
+    border: 1px dashed rgba(0, 0, 0, 0.25);
+}
+
+.single-post-stats {
+    color: rgba(18, 19, 45, 0.6);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+}
+.spinner-container {
+    position: relative;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px dashed rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.selected-posts {
+    height: 100%;
+    border-radius: 24px;
+    background: rgba(18, 19, 45, 0.05);
+}
+.selected-posts-title {
+    color: rgb(18, 19, 45);
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+.selected-posts-desc {
+    color: rgba(18, 19, 45, 0.6);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.single-list-post {
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: rgb(255, 255, 255);
+}
+.single-list-post-heading {
+    overflow-wrap: break-word;
+    color: rgb(18, 19, 45);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+.select-button {
+    cursor: pointer;
+}
+
+/* ***Register Section CSS*** */
+.register {
+    border-radius: 32px;
+    background: rgb(18, 19, 45);
+    color: rgb(255, 255, 255);
+}
+.register-heading {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 50px;
+    letter-spacing: 0px;
+}
+.register-paragraph {
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+.register-button {
+    width: 235px;
+    height: 56px;
+    border-radius: 50px;
+    border: none;
+    background: rgb(121, 125, 252);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+.join-forum {
+    width: 388.79px;
+    height: 341.99px;
+}
+
+/* ***Latest Post Section CSS*** */
+.latest-image {
+    border-radius: 40px;
+}
+.single-latest-post {
+    box-sizing: border-box;
+    border: 1px solid rgba(18, 19, 45, 0.15);
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+    color: black;
+}
+.latest-post-date {
+    color: rgba(18, 19, 45, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+.latest-post-heading {
+    color: rgb(18, 19, 45);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+.latest-post-pragraph {
+    color: rgba(18, 19, 45, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    min-height: 90px;
+}
+.latest-author-image {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.latest-author-name {
+    color: rgb(18, 19, 45);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+.latest-author-designaation {
+    color: rgba(18, 19, 45, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+}
+/* ***Footer Section CSS*** */
+.footer {
+    background: linear-gradient(180deg, rgba(18, 19, 45, 0.05), rgba(18, 19, 45, 0) 100%);
+}
+.footer-heading {
+    color: rgb(18, 19, 45);
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 45px;
+    letter-spacing: 0px;
+}
+.footer-paragraph {
+    color: rgba(18, 19, 45, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.footer-icons {
+    font-size: 28px;
+    margin-right: 30px;
+}
+
+/* ***Resaponsive Section CSS*** */
+
+@media screen and (max-width: 600px) {
+    * {
+        overflow-x: hidden !important;
+    }
+    body {
+        padding: 0px 15px;
+        overflow-x: hidden;
+    }
+    .mt-5 {
+        margin-top: 10px !important;
+    }
+
+    .mt-3 {
+        margin-top: 5px !important;
+    }
+
+    .mt-4 {
+        margin-top: 8px !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 10px !important;
+    }
+
+    .banner-top h3 {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .banner-middle p {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .searchField {
+        width: 250px;
+    }
+
+    .searchButton {
+        margin-top: 5px;
+        margin-left: 0;
+        width: 250px;
+    }
+    #smallRegStats {
+        display: flex !important;
+    }
+    .banner-right {
+        width: 250px;
+        height: 320px;
+        padding: 48px;
+        border-radius: 32px;
+        background: rgb(255, 255, 255);
+        color: rgba(18, 19, 45, 0.8);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .banner-bottom {
+        margin-left: 5px;
+    }
+    .single-post-title {
+        color: rgb(18, 19, 45);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0px;
+    }
+    .post-category {
+        font-size: 16px;
+    }
+
+    .post-author {
+        font-size: 16px;
+    }
+}
